@@ -3,6 +3,7 @@
 
 namespace Fitness.BL.Model
 {
+    [Serializable]
     public class User
     {
         #region Свойства
@@ -57,7 +58,7 @@ namespace Fitness.BL.Model
                 throw new ArgumentNullException("Gender can't be empty or null.", nameof(gender));
             }
 
-            if(birthDate < DateTime.Parse("01.01.1900. ") || birthDate >= DateTime.Now)
+            if(birthDate < DateTime.Parse("01.01.1900") || birthDate >= DateTime.Now)
             {
                 throw new ArgumentException("Impossible birthDate.", nameof(birthDate));
             }
