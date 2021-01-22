@@ -11,7 +11,7 @@ namespace Fitness.BL.Model
         {
             if (string.IsNullOrWhiteSpace(name))
             {
-                throw new ArgumentNullException("Name of gender can't be empty or null.", nameof(name));
+                throw new ArgumentNullException("Name of gender can't be empty or null=)", nameof(name));
             }
 
             Name = name;
